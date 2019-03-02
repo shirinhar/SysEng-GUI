@@ -1,23 +1,31 @@
 <link rel="stylesheet" type="text/css" href="login.css">
 
-<form method="post" action="index.html">
-<div class="box">
-  <h1>Login</h1>
-  <hr>
-  <input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+<head>
+  <title>Medical Instrument Detection</title>
+</head>
 
-  <input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+<body>
 
-  <a href="#"><div class="btn">Sign In</div></a> <!-- End Btn -->
-  <a href="#"><div id="btn2">Emergency Sign In</div></a> <!-- End Btn -->
+  <div class="box">
+    <h1>Login</h1>
+    <hr>
+    <form action="login.php" method="POST" >
+      <input type="text" name="username" value="username" onFocus="field_focus(this, 'username');" onblur="field_blur(this, 'username');" class="email" />
 
-</div> <!-- End Box -->
-</form>
+      <input type="password" name="password" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+      <input class="btn" type="submit" value="Sign In"/>
 
-<div class="gosh_img">
-  <img class="img" src="login.png" alt="Great Ormond Stree Hospital" height="200">
+      <!-- <a href="#"><div class="btn">Sign In</div></a> <!-- End Btn -->
+      <a href="#"><div id="btn2">Emergency Sign In</div></a> <!-- End Btn -->
+    </form>
 
-</div>
+  </div> <!-- End Box -->
+
+  <div class="gosh_img">
+    <img class="img" src="login.png" alt="Great Ormond Stree Hospital" height="200">
+  </div>
+</body>
+
 
 
 <script type="text/javascript" src="login.js"></script>
