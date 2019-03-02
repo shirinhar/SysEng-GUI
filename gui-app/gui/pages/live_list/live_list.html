@@ -1,14 +1,25 @@
-<link rel="stylesheet" type="text/css" href="live_list.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="live_list.css">
+  <script src="../../linkers/stream.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
 
-<body>
+
+<body ng-app = "tools">
   <div class="header">
     <h1>Tools</h1>
+    <!-- TODO: make sure they ask you if you're sure -->
+    <button onclick="" class="btn" id="btn">Done</button> <!-- End Btn -->
+    <button onclick="stream()" class="btn" id="btn2">Live View</button>
     <hr>
   </div>
 
-  <div class="tool" style="background-color:lightblue">
-    <p id = "text"><here/p>
+  <div ng-controller = "toolControler" class="tools-display">
+    <div ng-repeat="tool in entireTools" class = "tool-dislplay" ng-style="{'background-color':tool.count != 0 ?  'rgb(173, 208, 124)': 'rgb(209, 66, 66)', 'border-color':tool.count != 0 ?  'rgb(49, 162, 40)': 'rgb(177, 53, 53)'}">
+      <p class="tool-text">{{tool.name}} ---- {{tool.count}}</p>
+    </div>
   </div>
+
 
 </body>
 

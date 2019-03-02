@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background: white;
+  background: rgb(237, 231, 217);
   margin: 0 auto 0 auto;
   width:100%;
   text-align:center;
@@ -9,15 +9,75 @@ body {
 
 h1 {
   font-size:1.5em;
-  color:#525252;
+  color:#403e3e;
 }
 
 .header {
+  position: relative;
+  padding-top: 6px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-.tool {
+.tools-display {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.tool-dislplay {
   width: 300px;
-  margin-left: 210px;
+  height: 30px;
+  border-radius: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid;
+  border-color: black;
+  margin-top: 7px;
+}
+
+.tool-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* padding-top: 7px; */
+}
+
+.btn {
+  font-size:1.3em;
+  width: 100px;
+  height: 40px;;
+  color: black;
+  border-radius: 6px;
+  /* padding-top: 7px; */
+
+  position:absolute;
+  top:14;
+
+}
+
+#btn:hover {
+  background-color: rgb(217, 210, 194);
+}
+
+
+#btn {
+  background-color: rgb(237, 231, 217);
+  border: 1px solid black;
+  right:0;
+}
+
+
+#btn2 {
+  background-color: rgb(237, 231, 217);
+  border: 1px solid black;
+  width: 130px;
+
+  left:0;
+}
+
+#btn2:hover {
+  background-color: rgb(217, 210, 194);
 }

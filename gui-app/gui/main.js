@@ -17,7 +17,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   // mainWindow.loadFile('gui.html')
-  mainWindow.loadFile('pages/login/login.html')
+  mainWindow.loadFile('pages/live_list/live_list.html')
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
