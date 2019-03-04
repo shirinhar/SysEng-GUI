@@ -15,7 +15,7 @@
   </div>
 
   <div ng-controller = "toolControler" class="tools-display">
-    <div ng-repeat="tool in entireTools" class = "tool-dislplay" ng-style="{'background-color':tool.count != 0 ?  'rgb(173, 208, 124)': 'rgb(209, 66, 66)', 'border-color':tool.count != 0 ?  'rgb(49, 162, 40)': 'rgb(177, 53, 53)'}">
+    <div ng-repeat="tool in entireTools" class = "tool-dislplay" ng-style="{'background-color':tool.count != 0 ?  'rgba(173, 208, 124, 0.74)': 'rgba(209, 66, 66, 0.83)', 'border-color':tool.count != 0 ?  'rgb(49, 162, 40)': 'rgb(177, 53, 53)'}">
       <p class="tool-text">{{tool.name}} ---- {{tool.count}}</p>
     </div>
   </div>

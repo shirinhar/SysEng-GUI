@@ -13,17 +13,13 @@ function field_blur(field, email) {
 }
 
 function login() {
-  
+
 }
 
-
-
-// //Fade in dashboard box
-// $(document).ready(function(){
-//     $('.box').hide().fadeIn(1000);
-//     });
-//
-// //Stop click event
-// $('a').click(function(event){
-//     event.preventDefault();
-// 	});
+function emergencyLogin() {
+  var txt;
+  if (confirm("Do you want to skip loging in?")) {
+    // go to the list page
+    window.location="../live_list/live_list.html";
+  }
+}
